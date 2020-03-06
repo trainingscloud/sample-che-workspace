@@ -1,0 +1,24 @@
+= Start che workspace
+
+Run the workspace by opening the following URL: http(s)://che-host:che-port/f?url=https://<GitRepository>
+Example
+
+https://che.openshift.io/f?url=https://github.com/trainingscloud/sample-che-workspace
+
+
+
+Execute the workspace by opening the following URL: http(s)://che-host:che-port/f?url=<GitHubBranch>
+Example
+
+Use following URL format to open an experimental quarkus-quickstarts branch hosted on che.openshift.io.
+
+https://che.openshift.io/f?url=https://github.com/trainingscloud/sample-che-workspace/tree/master
+
+
+
+
+
+
+https://www.eclipse.org/che/docs/che-7//making-a-workspace-portable-using-a-devfile/
+
+

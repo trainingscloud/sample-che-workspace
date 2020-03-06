@@ -1,0 +1,16 @@
+apiVersion: 1.0.0
+metadata:
+  name: che-sample-workspace
+projects:
+  - name: petclinic
+    source:
+      type: git
+      location: 'https://github.com/spring-projects/spring-petclinic.git'
+components:
+  - type: chePlugin
+    id: redhat/java/latest
+  - alias: exec-plugin
+    type: chePlugin
+    id: eclipse/che-machine-exec-plugin/0.0.1
+
+
