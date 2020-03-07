@@ -16,13 +16,11 @@ commands:
   - name: mvn:clean
     actions:
       - type: exec
-        component: che-dev
         command: mvn clean
         workdir: /projects/simple
   - name: mvn:build
     actions:
     - type: exec
-      component: che-dev
       command: mvn package
       workdir: /projects/simple
 
