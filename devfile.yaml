@@ -16,11 +16,13 @@ commands:
   - name: mvn:clean
     actions:
       - type: exec
+        component: exec-plugin
         command: mvn clean
         workdir: /projects/simple
   - name: mvn:build
     actions:
     - type: exec
+      component: exec-plugin
       command: mvn package
       workdir: /projects/simple
 
