@@ -2,10 +2,10 @@ apiVersion: 1.0.0
 metadata:
   name: che-sample-workspace
 projects:
-  - name: petclinic
+  - name: simple
     source:
       type: git
-      location: 'https://github.com/spring-projects/spring-petclinic.git'
+      location: 'https://github.com/jitpack/maven-simple'
 components:
   - type: chePlugin
     id: redhat/java/latest
@@ -16,14 +16,14 @@ commands:
   - name: mvn:clean
     actions:
       - type: exec
-        component: mysql
+        component: che-dev
         command: mvn clean
-        workdir: /projects/petclinic
+        workdir: /projects/simple
   - name: mvn:build
     actions:
     - type: exec
       component: che-dev
       command: mvn package
-      workdir: /projects/petclinic
+      workdir: /projects/simple
 
 
