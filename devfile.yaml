@@ -12,5 +12,18 @@ components:
   - alias: exec-plugin
     type: chePlugin
     id: eclipse/che-machine-exec-plugin/0.0.1
+commands:
+  - name: mvn:clean
+    actions:
+      - type: exec
+        component: mysql
+        command: mvn clean
+        workdir: /projects/petclinic
+  - name: mvn:build
+    actions:
+    - type: exec
+      component: che-dev
+      command: mvn package
+      workdir: /projects/petclinic
 
 
